@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 const Navbar = () => {
     const [user, setUser] = useState({})
     useEffect(() => {
-        fetch('http://refertest.pythonanywhere.com/user/data', {
+        //getting user api
+        fetch('https://refertest.pythonanywhere.com/user/data', {
             method: 'GET'
         })
             .then(res => res.json())

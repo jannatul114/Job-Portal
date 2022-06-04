@@ -3,7 +3,8 @@ import '../HomePage.css';
 const HomePage = () => {
     const [jobs, setJobs] = useState([])
     useEffect(() => {
-        fetch('http://refertest.pythonanywhere.com/job/openings', {
+        //getting jobs api
+        fetch('https://refertest.pythonanywhere.com/job/openings', {
             method: 'GET',
         })
             .then(res => res.json())
