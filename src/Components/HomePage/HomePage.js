@@ -20,7 +20,7 @@ const HomePage = () => {
                         jobs?.length === 0 ? <h1 className='text-center text-accent text-5xl'>No Jobs Yet</h1> :
                             jobs?.map(job => <div class="card  bg-base-100 shadow-xl">
 
-                                <div class="card-body">
+                                <div class="card-body hover:bg-teal-100 ease-in ">
                                     <h2 class="card-title">
                                         {job?.designation}
                                     </h2>

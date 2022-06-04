@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
                 <div class="navbar-end">
                     <ul class="menu menu-horizontal p-0 hidden lg:flex gap-2">
-                        <li ><a className='btn btn-accent'>{user?.data?.name}</a></li>
+                        <li>{user?.data?.name && <a className='btn btn-accent'>{user?.data?.name}</a>}</li>
 
                         <li><a>{user?.data?.college}</a></li>
                     </ul>
