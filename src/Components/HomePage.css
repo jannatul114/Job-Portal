@@ -1,0 +1,23 @@
+.heading {
+    text-align: center;
+}
+
+.parent-div {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.single-Jobs {
+    max-width: 400px;
+    margin: 30px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .parent-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
